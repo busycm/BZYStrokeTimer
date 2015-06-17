@@ -44,7 +44,7 @@
 }
 
 - (void)commonInit {
-    self.progress = 0.0f;
+//    self.progress = 0.0f;
     [self.layer addSublayer:self.shapeLayer];
 }
 
@@ -132,6 +132,10 @@
     return self.shapeLayer.bounds.size;
 }
 
+//- (void)prepareForInterfaceBuilder {
+//    self.progress = 0.5;
+//}
+
 #pragma mark - Helpers
 
 - (CABasicAnimation *)generateAnimationWithDuration:(NSTimeInterval)duration FromValue:(NSNumber *)fromValue toValue:(NSNumber *)toValue withKeypath:(NSString *)keyPath withFillMode:(NSString *)fillMode {
@@ -201,6 +205,16 @@
 }
 
 #pragma mark Property Setters
+
+- (void)setProgress:(CGFloat)progress {
+    if(progress >= 1) {
+        self.shapeLayer.strokeEnd = 1.0f;
+    } else if(progress <= 0) {
+        self.shapeLayer.strokeEnd = 0.0f;
+    } else {
+        self.shapeLayer.strokeEnd = progress;
+    }
+}
 
 
 - (void)setTimerColor:(UIColor *)timerColor {
