@@ -1,0 +1,6 @@
+framework module Pods_BZYStrokeTimer_Example {
+  umbrella header "Pods-BZYStrokeTimer_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

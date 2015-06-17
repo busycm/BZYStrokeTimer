@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'BZYStrokeTimer_Example', :exclusive => true do
+  pod "BZYStrokeTimer", :path => "../"
+  pod 'Fingertips'
+end
+
+target 'BZYStrokeTimer_Tests', :exclusive => true do
+  pod "BZYStrokeTimer", :path => "../"
+
+  
+end

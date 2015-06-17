@@ -1,0 +1,17 @@
+PODS:
+  - BZYStrokeTimer (1.0.0)
+  - Fingertips (0.4.0)
+
+DEPENDENCIES:
+  - BZYStrokeTimer (from `../`)
+  - Fingertips
+
+EXTERNAL SOURCES:
+  BZYStrokeTimer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BZYStrokeTimer: 37d0102dd20f9920a4524a2e6a0554d5ed894140
+  Fingertips: 09678a650eecad2c1733dfdd5cb4004600ce2899
+
+COCOAPODS: 0.37.2
