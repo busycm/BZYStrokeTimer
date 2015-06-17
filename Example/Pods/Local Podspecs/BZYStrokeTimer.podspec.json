@@ -1,25 +1,26 @@
 {
   "name": "BZYStrokeTimer",
-  "version": "0.1.0",
-  "summary": "A short description of BZYStrokeTimer.",
-  "description": "                       An optional longer description of BZYStrokeTimer\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/BZYStrokeTimer",
+  "version": "1.0.0",
+  "summary": "It's really cool",
+  "description": "                            Something something!\n",
+  "homepage": "https://github.com/busycm/BZYStrokeTimer",
   "license": "MIT",
   "authors": {
-    "startupthekid": "conronb@gmail.com"
+    "startupthekid": "conronb@gmail.com",
+    "ruddfawcett": "rudd.fawcett@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/BZYStrokeTimer.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/busycm/BZYStrokeTimer.git",
+    "tag": "1.0.0"
   },
+  "social_media_url": "https://twitter.com/busycm",
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "BZYStrokeTimer": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
 }
