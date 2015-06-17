@@ -8,6 +8,8 @@
 
 #import "BZYViewController.h"
 
+#import "BZYStrokeTimer.h"
+
 @interface BZYViewController ()
 
 @end

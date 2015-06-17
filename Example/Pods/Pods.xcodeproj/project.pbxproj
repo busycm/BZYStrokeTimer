@@ -1,0 +1,1034 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13055CE3954B69B7517B7139 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D85A90B7C4D65D1A622DFE /* ReplaceMe.m */; };
+		212814961B323A7B0010091A /* BZYStrokeTimerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 212814951B323A7B0010091A /* BZYStrokeTimerDelegate.h */; };
+		212814991B323A8A0010091A /* BZYStrokeTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 212814971B323A8A0010091A /* BZYStrokeTimer.h */; };
+		2128149A1B323A8A0010091A /* BZYStrokeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 212814981B323A8A0010091A /* BZYStrokeTimer.m */; };
+		353F8164ECD7673501AB33A0 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 963C1CCDE1F8C9C4ACFDF006 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-dummy.m */; };
+		59AB32A75292156F4147D7D5 /* BZYStrokeTimer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 75FFC0216BCF1B8129CCEFB3 /* BZYStrokeTimer.bundle */; };
+		68CE425A0049E495A4772A99 /* BZYStrokeTimer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BCCD2FD7C10186727D27AE6A /* BZYStrokeTimer.bundle */; };
+		6A4CEBF104254B89CC47515D /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 388625D3092451C5D9941FC3 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70C146D84CD84EFFF2B4E7C5 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC238647A9AA509CBE8F33A6 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D604EBD1839F579DF080426 /* Pods-BZYStrokeTimer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A36D1AC3FB527A9EE4ED37 /* Pods-BZYStrokeTimer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2002E351014F01EF47E4BAF /* Pods-BZYStrokeTimer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BAF79316DBD37BDFE6BA302 /* Pods-BZYStrokeTimer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAD11E62221922DB1A0E16AD /* Pods-BZYStrokeTimer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55672928D15FABEBF3E76A0E /* Pods-BZYStrokeTimer_Tests-dummy.m */; };
+		BD56394C16BCA780F99DABAE /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D85A90B7C4D65D1A622DFE /* ReplaceMe.m */; };
+		D9EFB6202BE8948731946A71 /* Pods-BZYStrokeTimer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FC1053909D2DFF7DDA85B /* Pods-BZYStrokeTimer_Example-dummy.m */; };
+		DE7AD4973F7A5F3DD751EF95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C02B059B54C3B9CBB260840 /* Foundation.framework */; };
+		E4E49D54C3532635D4A62615 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C02B059B54C3B9CBB260840 /* Foundation.framework */; };
+		E767C4F7BCE4A8850CD17246 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C02B059B54C3B9CBB260840 /* Foundation.framework */; };
+		F7536571DBA88F61EEFD3996 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 743ED69368CBD5BCBE99D0D9 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-dummy.m */; };
+		F88B1946E4DA5AF05D088A17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C02B059B54C3B9CBB260840 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C0DADBAEF9A00A99135A8EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE33AE8A8217AFCDC0388FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E1610FC555B398DF3A61B7F;
+			remoteInfo = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer";
+		};
+		9C43D385F3AC0E4F8C1A13E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE33AE8A8217AFCDC0388FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8F1C470BA319ADBE83A22EF;
+			remoteInfo = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer";
+		};
+		9D71F39E95157BFD65D97877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE33AE8A8217AFCDC0388FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7215B8AA9765A8322B07B81C;
+			remoteInfo = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer";
+		};
+		BACEDF9A3FC63AC229AB397A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE33AE8A8217AFCDC0388FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB02087BF371AEDA9956CA86;
+			remoteInfo = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11A5BA45FF197252B8795426 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A36D1AC3FB527A9EE4ED37 /* Pods-BZYStrokeTimer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BZYStrokeTimer_Example-umbrella.h"; sourceTree = "<group>"; };
+		177CC95B721D49C5EB8A15F3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E1D7155404C44D25C920177 /* BZYStrokeTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BZYStrokeTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		212814951B323A7B0010091A /* BZYStrokeTimerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYStrokeTimerDelegate.h; sourceTree = "<group>"; };
+		212814971B323A8A0010091A /* BZYStrokeTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZYStrokeTimer.h; sourceTree = "<group>"; };
+		212814981B323A8A0010091A /* BZYStrokeTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZYStrokeTimer.m; sourceTree = "<group>"; };
+		234BB3C938E3035E7030190C /* Pods-BZYStrokeTimer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BZYStrokeTimer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BAF79316DBD37BDFE6BA302 /* Pods-BZYStrokeTimer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BZYStrokeTimer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		304FF2EACB35F28DE04D95FB /* Pods-BZYStrokeTimer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BZYStrokeTimer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		388625D3092451C5D9941FC3 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-umbrella.h"; path = "../Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-umbrella.h"; sourceTree = "<group>"; };
+		4C02B059B54C3B9CBB260840 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C61321DAA1998C78F6C9188 /* Pods-BZYStrokeTimer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BZYStrokeTimer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		501AC2B7F2DCE719473651A4 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		54D85A90B7C4D65D1A622DFE /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		55672928D15FABEBF3E76A0E /* Pods-BZYStrokeTimer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BZYStrokeTimer_Tests-dummy.m"; sourceTree = "<group>"; };
+		56C9B58D8FCB9929AB853621 /* Pods-BZYStrokeTimer_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BZYStrokeTimer_Tests-environment.h"; sourceTree = "<group>"; };
+		5816013AF6180DF9ADDA1806 /* Pods-BZYStrokeTimer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BZYStrokeTimer_Example-resources.sh"; sourceTree = "<group>"; };
+		597B9630AB996700BA8988A7 /* Pods_BZYStrokeTimer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BZYStrokeTimer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3753B9AC5EAC29C313F52D /* BZYStrokeTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BZYStrokeTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		647B895111524FF9DC597404 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648FC1053909D2DFF7DDA85B /* Pods-BZYStrokeTimer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BZYStrokeTimer_Example-dummy.m"; sourceTree = "<group>"; };
+		67F9D62C9E5CB0920DB387AE /* Pods-BZYStrokeTimer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BZYStrokeTimer_Example.modulemap"; sourceTree = "<group>"; };
+		743ED69368CBD5BCBE99D0D9 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-dummy.m"; sourceTree = "<group>"; };
+		75FFC0216BCF1B8129CCEFB3 /* BZYStrokeTimer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BZYStrokeTimer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7886C893F19DFA87B9F6F592 /* Pods-BZYStrokeTimer_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BZYStrokeTimer_Example-environment.h"; sourceTree = "<group>"; };
+		8318C377782B12732A389EA1 /* Pods-BZYStrokeTimer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BZYStrokeTimer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		84C444CDD5B02E91E9D683E1 /* Pods-BZYStrokeTimer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BZYStrokeTimer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		88DBFEC485361E06E1923DFC /* Pods-BZYStrokeTimer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BZYStrokeTimer_Tests.modulemap"; sourceTree = "<group>"; };
+		893E80AC75C535563B55BA8E /* Pods-BZYStrokeTimer_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BZYStrokeTimer_Tests-resources.sh"; sourceTree = "<group>"; };
+		8DADEAF0F300FC5A5ABD3EB2 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-Private.xcconfig"; sourceTree = "<group>"; };
+		963C1CCDE1F8C9C4ACFDF006 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-dummy.m"; path = "../Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-dummy.m"; sourceTree = "<group>"; };
+		9A58C681CCE69EE2B3056C8D /* Pods-BZYStrokeTimer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BZYStrokeTimer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9EB0C45B716280D9E4EBF78B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Info.plist"; sourceTree = "<group>"; };
+		A40E50EF74118949B835E766 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-prefix.pch"; path = "../Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-prefix.pch"; sourceTree = "<group>"; };
+		A7E6EBF96E2FD379DBE088D6 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-prefix.pch"; sourceTree = "<group>"; };
+		A81C30BE19F0FD7363C8BD23 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.xcconfig"; path = "../Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.xcconfig"; sourceTree = "<group>"; };
+		B48A3B5DFD562C16B55694DF /* Pods-BZYStrokeTimer_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BZYStrokeTimer_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B6138D47D5ADDADFB9FF6A7E /* Pods-BZYStrokeTimer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BZYStrokeTimer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BA31E3DD0459A3BC1ACC8EC5 /* Pods-BZYStrokeTimer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BZYStrokeTimer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB56F73A6255D75AB5BF3C4B /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.modulemap"; path = "../Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.modulemap"; sourceTree = "<group>"; };
+		BCCD2FD7C10186727D27AE6A /* BZYStrokeTimer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BZYStrokeTimer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D8E09FA44B837F8F84E2B0 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-Private.xcconfig"; path = "../Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-Private.xcconfig"; sourceTree = "<group>"; };
+		C6669E1CF5492243C4CA45C9 /* Pods_BZYStrokeTimer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BZYStrokeTimer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7616B1D0FDDBA3E83EC25D6 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer.xcconfig"; sourceTree = "<group>"; };
+		C91B9D194AE0619C5F437D88 /* Pods-BZYStrokeTimer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BZYStrokeTimer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D7F4F8BD93A20066EFC6A95E /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer.modulemap"; sourceTree = "<group>"; };
+		EC238647A9AA509CBE8F33A6 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3215A0165A44962BFEC6EDE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7AD4973F7A5F3DD751EF95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3558FFBDC7447D136262314B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42D3D8C0B8DB57E60F2E14D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E767C4F7BCE4A8850CD17246 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C6667F90EFE3B1EB8D2E0D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88B1946E4DA5AF05D088A17 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A43FE3CB4A762AA27552AD01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8AB77D6DBA0D8F3DA4DC2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E49D54C3532635D4A62615 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CA5D5C0F45FA4B4E57C771 /* BZYStrokeTimer */ = {
+			isa = PBXGroup;
+			children = (
+				5E98C344FC83AFB68AC3050E /* Pod */,
+				770DE18A7F2F922DDB080393 /* Support Files */,
+			);
+			name = BZYStrokeTimer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2128148F1B323A4C0010091A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				212814971B323A8A0010091A /* BZYStrokeTimer.h */,
+				212814981B323A8A0010091A /* BZYStrokeTimer.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		212814941B323A690010091A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				212814951B323A7B0010091A /* BZYStrokeTimerDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		2A0F07E13F66514064CFAAD9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49455D0F65F9FB1716D14DED /* Pods-BZYStrokeTimer_Example */,
+				7A328D117DE18D660C0A64C6 /* Pods-BZYStrokeTimer_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4246B5D9D3FC1D147182D954 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02CA5D5C0F45FA4B4E57C771 /* BZYStrokeTimer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4836854DD81B56F53C6A580A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4C02B059B54C3B9CBB260840 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		49455D0F65F9FB1716D14DED /* Pods-BZYStrokeTimer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				177CC95B721D49C5EB8A15F3 /* Info.plist */,
+				67F9D62C9E5CB0920DB387AE /* Pods-BZYStrokeTimer_Example.modulemap */,
+				4C61321DAA1998C78F6C9188 /* Pods-BZYStrokeTimer_Example-acknowledgements.markdown */,
+				304FF2EACB35F28DE04D95FB /* Pods-BZYStrokeTimer_Example-acknowledgements.plist */,
+				648FC1053909D2DFF7DDA85B /* Pods-BZYStrokeTimer_Example-dummy.m */,
+				7886C893F19DFA87B9F6F592 /* Pods-BZYStrokeTimer_Example-environment.h */,
+				C91B9D194AE0619C5F437D88 /* Pods-BZYStrokeTimer_Example-frameworks.sh */,
+				5816013AF6180DF9ADDA1806 /* Pods-BZYStrokeTimer_Example-resources.sh */,
+				13A36D1AC3FB527A9EE4ED37 /* Pods-BZYStrokeTimer_Example-umbrella.h */,
+				8318C377782B12732A389EA1 /* Pods-BZYStrokeTimer_Example.debug.xcconfig */,
+				B6138D47D5ADDADFB9FF6A7E /* Pods-BZYStrokeTimer_Example.release.xcconfig */,
+			);
+			name = "Pods-BZYStrokeTimer_Example";
+			path = "Target Support Files/Pods-BZYStrokeTimer_Example";
+			sourceTree = "<group>";
+		};
+		542B2DF7024D441925EB9B56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCCD2FD7C10186727D27AE6A /* BZYStrokeTimer.bundle */,
+				75FFC0216BCF1B8129CCEFB3 /* BZYStrokeTimer.bundle */,
+				5B3753B9AC5EAC29C313F52D /* BZYStrokeTimer.framework */,
+				1E1D7155404C44D25C920177 /* BZYStrokeTimer.framework */,
+				C6669E1CF5492243C4CA45C9 /* Pods_BZYStrokeTimer_Example.framework */,
+				597B9630AB996700BA8988A7 /* Pods_BZYStrokeTimer_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E98C344FC83AFB68AC3050E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				679A522CF8BDA48C0DAD891B /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		679A522CF8BDA48C0DAD891B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				212814941B323A690010091A /* Protocols */,
+				2128148F1B323A4C0010091A /* Views */,
+				54D85A90B7C4D65D1A622DFE /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		770DE18A7F2F922DDB080393 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11A5BA45FF197252B8795426 /* Info.plist */,
+				9EB0C45B716280D9E4EBF78B /* Info.plist */,
+				D7F4F8BD93A20066EFC6A95E /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer.modulemap */,
+				C7616B1D0FDDBA3E83EC25D6 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer.xcconfig */,
+				8DADEAF0F300FC5A5ABD3EB2 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-Private.xcconfig */,
+				743ED69368CBD5BCBE99D0D9 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-dummy.m */,
+				A7E6EBF96E2FD379DBE088D6 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-prefix.pch */,
+				EC238647A9AA509CBE8F33A6 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-umbrella.h */,
+				BB56F73A6255D75AB5BF3C4B /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.modulemap */,
+				A81C30BE19F0FD7363C8BD23 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.xcconfig */,
+				C0D8E09FA44B837F8F84E2B0 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-Private.xcconfig */,
+				963C1CCDE1F8C9C4ACFDF006 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-dummy.m */,
+				A40E50EF74118949B835E766 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-prefix.pch */,
+				388625D3092451C5D9941FC3 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-BZYStrokeTimer_Example-BZYStrokeTimer";
+			sourceTree = "<group>";
+		};
+		7A328D117DE18D660C0A64C6 /* Pods-BZYStrokeTimer_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				647B895111524FF9DC597404 /* Info.plist */,
+				88DBFEC485361E06E1923DFC /* Pods-BZYStrokeTimer_Tests.modulemap */,
+				BA31E3DD0459A3BC1ACC8EC5 /* Pods-BZYStrokeTimer_Tests-acknowledgements.markdown */,
+				84C444CDD5B02E91E9D683E1 /* Pods-BZYStrokeTimer_Tests-acknowledgements.plist */,
+				55672928D15FABEBF3E76A0E /* Pods-BZYStrokeTimer_Tests-dummy.m */,
+				56C9B58D8FCB9929AB853621 /* Pods-BZYStrokeTimer_Tests-environment.h */,
+				B48A3B5DFD562C16B55694DF /* Pods-BZYStrokeTimer_Tests-frameworks.sh */,
+				893E80AC75C535563B55BA8E /* Pods-BZYStrokeTimer_Tests-resources.sh */,
+				2BAF79316DBD37BDFE6BA302 /* Pods-BZYStrokeTimer_Tests-umbrella.h */,
+				234BB3C938E3035E7030190C /* Pods-BZYStrokeTimer_Tests.debug.xcconfig */,
+				9A58C681CCE69EE2B3056C8D /* Pods-BZYStrokeTimer_Tests.release.xcconfig */,
+			);
+			name = "Pods-BZYStrokeTimer_Tests";
+			path = "Target Support Files/Pods-BZYStrokeTimer_Tests";
+			sourceTree = "<group>";
+		};
+		A068472769F5F206C25396EB = {
+			isa = PBXGroup;
+			children = (
+				501AC2B7F2DCE719473651A4 /* Podfile */,
+				4246B5D9D3FC1D147182D954 /* Development Pods */,
+				CB017E1DD5240DB891A6EBC6 /* Frameworks */,
+				542B2DF7024D441925EB9B56 /* Products */,
+				2A0F07E13F66514064CFAAD9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CB017E1DD5240DB891A6EBC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4836854DD81B56F53C6A580A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		291BA879F5917EA6DD082DB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212814991B323A8A0010091A /* BZYStrokeTimer.h in Headers */,
+				7D604EBD1839F579DF080426 /* Pods-BZYStrokeTimer_Example-umbrella.h in Headers */,
+				212814961B323A7B0010091A /* BZYStrokeTimerDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CB624CB8A3D35CB09D83ED2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C146D84CD84EFFF2B4E7C5 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68BBB29F4783BCC4AF9CF95B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A4CEBF104254B89CC47515D /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46ABA41701F017393839F4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2002E351014F01EF47E4BAF /* Pods-BZYStrokeTimer_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5E1610FC555B398DF3A61B7F /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3E8A15DE599707D3C6AC81 /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer" */;
+			buildPhases = (
+				8DE5C5B36EB1FB954F75D067 /* Sources */,
+				3558FFBDC7447D136262314B /* Frameworks */,
+				9E188979DCD9F0C12F3C30EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer";
+			productName = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer";
+			productReference = 75FFC0216BCF1B8129CCEFB3 /* BZYStrokeTimer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7215B8AA9765A8322B07B81C /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 757D5E82D6840F5979EECB4E /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer" */;
+			buildPhases = (
+				E727817AEC2BD8A80AD4F4EE /* Sources */,
+				42D3D8C0B8DB57E60F2E14D9 /* Frameworks */,
+				EAEAF9A44C622507A4D8957B /* Resources */,
+				68BBB29F4783BCC4AF9CF95B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFC24CD9E63B0BA8B9730A80 /* PBXTargetDependency */,
+			);
+			name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer";
+			productName = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer";
+			productReference = 1E1D7155404C44D25C920177 /* BZYStrokeTimer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D25D885747C621C05FC0DA6 /* Pods-BZYStrokeTimer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D6630D28B846992984079A1 /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Example" */;
+			buildPhases = (
+				F1394E6958DF67E6DDF5449F /* Sources */,
+				3215A0165A44962BFEC6EDE5 /* Frameworks */,
+				291BA879F5917EA6DD082DB2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC25203360A838B3F2310DF /* PBXTargetDependency */,
+			);
+			name = "Pods-BZYStrokeTimer_Example";
+			productName = "Pods-BZYStrokeTimer_Example";
+			productReference = C6669E1CF5492243C4CA45C9 /* Pods_BZYStrokeTimer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE492AE496999AB701A72246 /* Pods-BZYStrokeTimer_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF19EDDDF2E4286D68746BE1 /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Tests" */;
+			buildPhases = (
+				AEAF74FB828DB47A236E633F /* Sources */,
+				BE8AB77D6DBA0D8F3DA4DC2D /* Frameworks */,
+				D46ABA41701F017393839F4E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2D7CF5E1DB6098485874671 /* PBXTargetDependency */,
+			);
+			name = "Pods-BZYStrokeTimer_Tests";
+			productName = "Pods-BZYStrokeTimer_Tests";
+			productReference = 597B9630AB996700BA8988A7 /* Pods_BZYStrokeTimer_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8F1C470BA319ADBE83A22EF /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C6403B7B7B72186BC3AF9E /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer" */;
+			buildPhases = (
+				7E33A8AF45BB3C761E0DC0A5 /* Sources */,
+				A43FE3CB4A762AA27552AD01 /* Frameworks */,
+				CA6F88EEC4FB7D66AF2EBF8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer";
+			productName = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer";
+			productReference = BCCD2FD7C10186727D27AE6A /* BZYStrokeTimer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		EB02087BF371AEDA9956CA86 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A43FBB0F06BED7C132D341C0 /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Example-BZYStrokeTimer" */;
+			buildPhases = (
+				BDF296B81C8C376BE70533CD /* Sources */,
+				5C6667F90EFE3B1EB8D2E0D4 /* Frameworks */,
+				287CD0BA4D1612CEF256C990 /* Resources */,
+				4CB624CB8A3D35CB09D83ED2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B7352DA43B65D2899FE2A43 /* PBXTargetDependency */,
+			);
+			name = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer";
+			productName = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer";
+			productReference = 5B3753B9AC5EAC29C313F52D /* BZYStrokeTimer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EE33AE8A8217AFCDC0388FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = DC313ED1AB9A1D889F1F3DBD /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A068472769F5F206C25396EB;
+			productRefGroup = 542B2DF7024D441925EB9B56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D25D885747C621C05FC0DA6 /* Pods-BZYStrokeTimer_Example */,
+				EB02087BF371AEDA9956CA86 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer */,
+				5E1610FC555B398DF3A61B7F /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer */,
+				AE492AE496999AB701A72246 /* Pods-BZYStrokeTimer_Tests */,
+				7215B8AA9765A8322B07B81C /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer */,
+				C8F1C470BA319ADBE83A22EF /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		287CD0BA4D1612CEF256C990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59AB32A75292156F4147D7D5 /* BZYStrokeTimer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E188979DCD9F0C12F3C30EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6F88EEC4FB7D66AF2EBF8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAEAF9A44C622507A4D8957B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CE425A0049E495A4772A99 /* BZYStrokeTimer.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E33A8AF45BB3C761E0DC0A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DE5C5B36EB1FB954F75D067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAF74FB828DB47A236E633F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD11E62221922DB1A0E16AD /* Pods-BZYStrokeTimer_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDF296B81C8C376BE70533CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7536571DBA88F61EEFD3996 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-dummy.m in Sources */,
+				BD56394C16BCA780F99DABAE /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E727817AEC2BD8A80AD4F4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				353F8164ECD7673501AB33A0 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-dummy.m in Sources */,
+				13055CE3954B69B7517B7139 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1394E6958DF67E6DDF5449F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EFB6202BE8948731946A71 /* Pods-BZYStrokeTimer_Example-dummy.m in Sources */,
+				2128149A1B323A8A0010091A /* BZYStrokeTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B7352DA43B65D2899FE2A43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer";
+			target = 5E1610FC555B398DF3A61B7F /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer */;
+			targetProxy = 7C0DADBAEF9A00A99135A8EB /* PBXContainerItemProxy */;
+		};
+		C2D7CF5E1DB6098485874671 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer";
+			target = 7215B8AA9765A8322B07B81C /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer */;
+			targetProxy = 9D71F39E95157BFD65D97877 /* PBXContainerItemProxy */;
+		};
+		DFC24CD9E63B0BA8B9730A80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer";
+			target = C8F1C470BA319ADBE83A22EF /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer */;
+			targetProxy = 9C43D385F3AC0E4F8C1A13E0 /* PBXContainerItemProxy */;
+		};
+		FAC25203360A838B3F2310DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BZYStrokeTimer_Example-BZYStrokeTimer";
+			target = EB02087BF371AEDA9956CA86 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer */;
+			targetProxy = BACEDF9A3FC63AC229AB397A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17A701860468EE3AE5CAB93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DADEAF0F300FC5A5ABD3EB2 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BZYStrokeTimer_Example-BZYStrokeTimer/Pods-BZYStrokeTimer_Example-BZYStrokeTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BZYStrokeTimer_Example-BZYStrokeTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BZYStrokeTimer_Example-BZYStrokeTimer/Pods-BZYStrokeTimer_Example-BZYStrokeTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BZYStrokeTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18F13F916B7A1E2BD41EBDC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D8E09FA44B837F8F84E2B0 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BZYStrokeTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		255B0C052B3AF8FD75EE7078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		62713FBD90345F1677ABB164 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6138D47D5ADDADFB9FF6A7E /* Pods-BZYStrokeTimer_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BZYStrokeTimer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BZYStrokeTimer_Example/Pods-BZYStrokeTimer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BZYStrokeTimer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		64071D97694065C07EF105E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DADEAF0F300FC5A5ABD3EB2 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BZYStrokeTimer_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BZYStrokeTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6FE729753C530BA6BEC40250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8318C377782B12732A389EA1 /* Pods-BZYStrokeTimer_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BZYStrokeTimer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BZYStrokeTimer_Example/Pods-BZYStrokeTimer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BZYStrokeTimer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		764BEEE0DB527E09CA967365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A58C681CCE69EE2B3056C8D /* Pods-BZYStrokeTimer_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BZYStrokeTimer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BZYStrokeTimer_Tests/Pods-BZYStrokeTimer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BZYStrokeTimer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9677E488B76569D1B023A2CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DADEAF0F300FC5A5ABD3EB2 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BZYStrokeTimer_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BZYStrokeTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		977539D6816394BEAAB15596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D8E09FA44B837F8F84E2B0 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BZYStrokeTimer_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BZYStrokeTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9784E1CF604E44B2C0D6BEDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D8E09FA44B837F8F84E2B0 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer/Pods-BZYStrokeTimer_Tests-BZYStrokeTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BZYStrokeTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C99CA3AD6850FFAC5D6AF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DADEAF0F300FC5A5ABD3EB2 /* Pods-BZYStrokeTimer_Example-BZYStrokeTimer-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-BZYStrokeTimer_Example-BZYStrokeTimer/Pods-BZYStrokeTimer_Example-BZYStrokeTimer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-BZYStrokeTimer_Example-BZYStrokeTimer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BZYStrokeTimer_Example-BZYStrokeTimer/Pods-BZYStrokeTimer_Example-BZYStrokeTimer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BZYStrokeTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D19D13168491AF42949FC066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D8E09FA44B837F8F84E2B0 /* Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-BZYStrokeTimer_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BZYStrokeTimer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E8B4F9FE89F683719766F2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234BB3C938E3035E7030190C /* Pods-BZYStrokeTimer_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BZYStrokeTimer_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BZYStrokeTimer_Tests/Pods-BZYStrokeTimer_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BZYStrokeTimer_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC156584E9E26CC93F386700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D6630D28B846992984079A1 /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE729753C530BA6BEC40250 /* Debug */,
+				62713FBD90345F1677ABB164 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		757D5E82D6840F5979EECB4E /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9784E1CF604E44B2C0D6BEDD /* Debug */,
+				18F13F916B7A1E2BD41EBDC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E3E8A15DE599707D3C6AC81 /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Example-BZYStrokeTimer-BZYStrokeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64071D97694065C07EF105E9 /* Debug */,
+				9677E488B76569D1B023A2CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A43FBB0F06BED7C132D341C0 /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Example-BZYStrokeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A701860468EE3AE5CAB93E /* Debug */,
+				9C99CA3AD6850FFAC5D6AF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C6403B7B7B72186BC3AF9E /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer-BZYStrokeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				977539D6816394BEAAB15596 /* Debug */,
+				D19D13168491AF42949FC066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC313ED1AB9A1D889F1F3DBD /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255B0C052B3AF8FD75EE7078 /* Debug */,
+				FC156584E9E26CC93F386700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF19EDDDF2E4286D68746BE1 /* Build configuration list for PBXNativeTarget "Pods-BZYStrokeTimer_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B4F9FE89F683719766F2D1 /* Debug */,
+				764BEEE0DB527E09CA967365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EE33AE8A8217AFCDC0388FA /* Project object */;
+}

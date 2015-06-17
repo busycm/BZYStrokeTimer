@@ -8,31 +8,21 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "BZYStrokeTimer"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of BZYStrokeTimer."
-  s.description      = <<-DESC
-                       An optional longer description of BZYStrokeTimer
+    s.name             = "BZYStrokeTimer"
+    s.version          = "1.0.0"
+    s.summary          = "It's really cool"
+    s.description      = <<-DESC
+                            Something something!
+                        DESC
+    s.homepage         = "https://github.com/busycm/BZYStrokeTimer"
+    s.license          = 'MIT'
+    s.authors           = { "startupthekid" => "conronb@gmail.com", "ruddfawcett" => "rudd.fawcett@gmail.com" }
+    s.source           = { :git => "https://github.com/busycm/BZYStrokeTimer.git", :tag => s.version.to_s }
+        s.social_media_url = 'https://twitter.com/busycm'
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/BZYStrokeTimer"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
-  s.author           = { "startupthekid" => "conronb@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/BZYStrokeTimer.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.platform     = :ios, '7.0'
+    s.requires_arc = true
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
-
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'BZYStrokeTimer' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.source_files = 'Pod/Classes/**/*'
+    s.frameworks = 'UIKit', 'Foundation'
 end

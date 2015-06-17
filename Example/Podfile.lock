@@ -1,0 +1,14 @@
+PODS:
+  - BZYStrokeTimer (0.1.0)
+
+DEPENDENCIES:
+  - BZYStrokeTimer (from `../`)
+
+EXTERNAL SOURCES:
+  BZYStrokeTimer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BZYStrokeTimer: ae7dee868eaca4253dfcaf3db2f93737381c69a4
+
+COCOAPODS: 0.37.2
