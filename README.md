@@ -92,7 +92,7 @@ pod "BZYStrokeTimer"
 ```
 
 ## Authors
-[startupthekid](https://github.com/startupthekid) (mailto: conronb@gmail.com) && [ruddfawcett](https://github.com/ruddfawcett) (mailto: rudd@ruddfawcett.com)
+[startupthekid](https://github.com/startupthekid) ([conronb@gmail.com](mailto:conronb@gmail.com)) && [ruddfawcett](https://github.com/ruddfawcett) ([rudd@ruddfawcett.com](mailto:rudd@ruddfawcett.com))
 startupthekid, conronb@gmail.com
 ruddfawcett, rudd@ruddfawcett.com
 
