@@ -15,9 +15,21 @@ IB_DESIGNABLE
 
 #pragma mark - Timer Customization
 
+/**
+ *  The progress of the timer (a decimal percentage).
+ */
 @property (nonatomic) IBInspectable CGFloat progress;
+
+/**
+ *  The color of the stroke.
+ */
 @property (nonatomic) IBInspectable UIColor *timerColor;
+
+/**
+ *  The width of the stroke
+ */
 @property (nonatomic) IBInspectable CGFloat lineWidth;
+
 /**
  *  Timing function to be used.
  *  @see CAMediaTimingFunction.h
@@ -35,10 +47,12 @@ IB_DESIGNABLE
  *  The elapsed time of the animation so far.
  */
 @property (nonatomic, readonly) NSTimeInterval elapsedTime;
+
 /**
  *  Percent of animation completed. Calculated as elapsedTime/duration;
  */
 @property (nonatomic, readonly) CGFloat animationCompletion;
+
 /**
  *  Is the timer currently animating.
  */

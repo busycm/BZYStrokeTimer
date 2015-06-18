@@ -15,17 +15,24 @@
 #define kDefaultLineWidth 10.0f
 #define kDefaultDuration 5.0f
 
+/**
+ *  The acutal layer for the timer.
+ */
 @property (strong, nonatomic) CAShapeLayer *shapeLayer;
+/**
+ *  The animation timer for it.
+ */
 @property (strong, nonatomic) NSTimer *animationTimer;
 
 @end
 
 @implementation BZYStrokeTimer
 
-- (instancetype) init {
-    if(self = [super init] ) {
+- (instancetype)init {
+    if (self = [super init] ) {
         [self commonInit];
     }
+    
     return self;
 }
 
@@ -33,6 +40,7 @@
     if (self = [super initWithCoder:aDecoder]) {
         [self commonInit];
     }
+    
     return self;
 }
 
@@ -40,19 +48,22 @@
     if (self = [super initWithFrame:frame]) {
         [self commonInit];
     }
+    
     return self;
 }
 
 - (void)commonInit {
-//    self.progress = 0.0f;
     [self.layer addSublayer:self.shapeLayer];
 }
 
 #pragma mark - Timing
 
 - (void)timerFired:(NSTimer *)sender {
-    if(!self.paused) _elapsedTime += 0.01;
-    if(_elapsedTime >= _duration) {
+    if (!self.paused) {
+        _elapsedTime += 0.01;
+    }
+    
+    if (_elapsedTime >= _duration) {
         [self.animationTimer invalidate];
         self.animationTimer = nil;
         [self stop];
@@ -62,62 +73,87 @@
 #pragma mark - Animation
 
 - (void)start {
-    //Check for and send delegate methods
-    if([_delegate respondsToSelector:@selector(strokeTimerShouldStart:)]) {
-        if(![_delegate strokeTimerShouldStart:self]) return;
+    if ([_delegate respondsToSelector:@selector(strokeTimerShouldStart:)]) {
+        if(![_delegate strokeTimerShouldStart:self]) {
+            return;
+        }
     }
-    if([_delegate respondsToSelector:@selector(strokeTimerWillStart:)]) [_delegate strokeTimerWillStart:self];
+    
+    if ([_delegate respondsToSelector:@selector(strokeTimerWillStart:)]) {
+        [_delegate strokeTimerWillStart:self];
+    }
+    
     _running = YES;
     _paused = NO;
+    
     self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
     self.shapeLayer.strokeEnd = 1;
-    //generate the animation
+    
     CABasicAnimation *wind = [self generateAnimationWithDuration:self.duration == 0 ? kDefaultDuration : self.duration FromValue:@(self.shapeLayer.strokeStart) toValue:@(self.shapeLayer.strokeEnd) withKeypath:@"strokeEnd" withFillMode:kCAFillModeForwards];
-    wind.timingFunction= [CAMediaTimingFunction functionWithName:self.timingFunction];
-    wind.removedOnCompletion=NO;
-    //add the animation 
+    wind.timingFunction = [CAMediaTimingFunction functionWithName:self.timingFunction];
+    wind.removedOnCompletion = NO;
+    
     [self.shapeLayer addAnimation:wind forKey:@"strokeEndAnimation"];
-    if([_delegate respondsToSelector:@selector(strokeTimerDidStart:)]) [_delegate strokeTimerDidStart:self];
+    
+    if ([_delegate respondsToSelector:@selector(strokeTimerDidStart:)]) {
+        [_delegate strokeTimerDidStart:self];
+    }
 }
 
 - (void)pause {
     if([_delegate respondsToSelector:@selector(strokeTimerShouldPause:)]) {
-        if(![_delegate strokeTimerShouldPause:self]) return;
+        if(![_delegate strokeTimerShouldPause:self]) {
+           return;
+        }
     }
     
-    if([_delegate respondsToSelector:@selector(strokeTimerWillPause:)]) [_delegate strokeTimerWillPause:self];
+    if ([_delegate respondsToSelector:@selector(strokeTimerWillPause:)]) {
+        [_delegate strokeTimerWillPause:self];
+    }
     
     CFTimeInterval pausedTime = [self.shapeLayer convertTime:CACurrentMediaTime() fromLayer:nil];
     self.shapeLayer.speed = 0.0;
     self.shapeLayer.timeOffset = pausedTime;
+    
     _paused = YES;
     _running = NO;
     
-    if([_delegate respondsToSelector:@selector(strokeTimerDidPause:)]) [_delegate strokeTimerDidPause:self];
+    if ([_delegate respondsToSelector:@selector(strokeTimerDidPause:)]) {
+        [_delegate strokeTimerDidPause:self];
+    }
 }
 
 - (void)resume {
-    
-    if([_delegate respondsToSelector:@selector(strokeTimerShouldResume:)]){
-        if(![_delegate strokeTimerShouldResume:self]) return;
+    if ([_delegate respondsToSelector:@selector(strokeTimerShouldResume:)]) {
+        if (![_delegate strokeTimerShouldResume:self]) {
+             return;
+        }
     }
-    if([_delegate respondsToSelector:@selector(strokeTimerWillResume:)]) [_delegate strokeTimerWillResume:self];
+    
+    if ([_delegate respondsToSelector:@selector(strokeTimerWillResume:)]) {
+        [_delegate strokeTimerWillResume:self];
+    }
     
     CFTimeInterval pausedTime = [self.shapeLayer timeOffset];
     self.shapeLayer.speed = 1.0;
     self.shapeLayer.timeOffset = 0.0;
     self.shapeLayer.beginTime = 0.0;
+    
     CFTimeInterval timeSincePause = [self.shapeLayer convertTime:CACurrentMediaTime() fromLayer:nil] - pausedTime;
     self.shapeLayer.beginTime = timeSincePause;
+    
     _paused = NO;
     _running = YES;
     
-    if([_delegate respondsToSelector:@selector(strokeTimerDidResume:)]) [_delegate strokeTimerDidResume:self];
+    if ([_delegate respondsToSelector:@selector(strokeTimerDidResume:)]) {
+        [_delegate strokeTimerDidResume:self];
+    }
 }
 
 - (void)stop {
-    
-    if([_delegate respondsToSelector:@selector(strokeTimerWillStop:)]) [_delegate strokeTimerWillStop:self];
+    if ([_delegate respondsToSelector:@selector(strokeTimerWillStop:)]) {
+        [_delegate strokeTimerWillStop:self];
+    }
     
     _running = NO;
     _paused = NO;
@@ -125,7 +161,9 @@
     
     [self.shapeLayer removeAnimationForKey:@"strokeEndAnimation"];
     
-    if([_delegate respondsToSelector:@selector(strokeTimerDidStop:)]) [_delegate strokeTimerDidStop:self];
+    if ([_delegate respondsToSelector:@selector(strokeTimerDidStop:)]) {
+        [_delegate strokeTimerDidStop:self];
+    }
 }
 
 - (CGSize)intrinsicContentSize {
@@ -144,6 +182,7 @@
     animation.fromValue = fromValue;
     animation.toValue = toValue;
     animation.fillMode = fillMode;
+    
     return animation;
 }
 
@@ -155,6 +194,7 @@
     [path addLineToPoint:CGPointMake(dx, CGRectGetMaxY(self.bounds)-dy)];
     [path addLineToPoint:CGPointMake(dx, dy)];
     [path addLineToPoint:CGPointMake(CGRectGetMidX(self.bounds), dy)];
+    
     return path;
 }
 
@@ -162,6 +202,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    
     self.shapeLayer.path = [self generatePathWithXInset:self.shapeLayer.lineWidth/2 withYInset:self.shapeLayer.lineWidth/2].CGPath;
 }
 
@@ -194,8 +235,9 @@
 }
 
 - (CGFloat)animationCompletion {
-    CGFloat percentage = _elapsedTime/_duration;
-    if(percentage >= 1) {
+    CGFloat percentage = _elapsedTime / _duration;
+    
+    if (percentage >= 1) {
         return 1.0f;
     } else if(percentage <= 0) {
         return 0.0f;
@@ -211,7 +253,7 @@
 #pragma mark Property Setters
 
 - (void)setProgress:(CGFloat)progress {
-    if(progress >= 1) {
+    if (progress >= 1) {
         self.shapeLayer.strokeEnd = 1.0f;
     } else if(progress <= 0) {
         self.shapeLayer.strokeEnd = 0.0f;
@@ -222,14 +264,14 @@
 
 
 - (void)setTimerColor:(UIColor *)timerColor {
-    if(![_timerColor isEqual:timerColor]) {
+    if (![_timerColor isEqual:timerColor]) {
         _timerColor = timerColor;
         self.shapeLayer.strokeColor = timerColor.CGColor;
     }
 }
 
 - (void)setLineWidth:(CGFloat)lineWidth {
-    if(_lineWidth != lineWidth) {
+    if (_lineWidth != lineWidth) {
         _lineWidth = lineWidth;
         self.shapeLayer.lineWidth = lineWidth;
     }
