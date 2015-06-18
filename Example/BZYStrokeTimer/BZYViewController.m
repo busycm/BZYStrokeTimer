@@ -19,14 +19,12 @@
 
 @implementation BZYViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self setup];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -42,10 +40,17 @@
 #pragma mark - Gesture Handler
 
 - (void)handleLongPress:(UILongPressGestureRecognizer *)gesture {
-    if(gesture.state == UIGestureRecognizerStateBegan) {
-        if(self.strokeTimer.isPaused) [self.strokeTimer resume];
-        if(!self.strokeTimer.isRunning) [self.strokeTimer start];
-    } else if((gesture.state == UIGestureRecognizerStateEnded || gesture.state == UIGestureRecognizerStateFailed || gesture.state == UIGestureRecognizerStateCancelled) && self.strokeTimer.isRunning) {
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        if (self.strokeTimer.isPaused) {
+            [self.strokeTimer resume];
+        }
+        
+        if (!self.strokeTimer.isRunning) {
+            [self.strokeTimer start];
+        }
+    } else if ((gesture.state == UIGestureRecognizerStateEnded ||
+                gesture.state == UIGestureRecognizerStateFailed ||
+                gesture.state == UIGestureRecognizerStateCancelled) && self.strokeTimer.isRunning) {
         [self.strokeTimer pause];
     }
 }
