@@ -13,6 +13,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+`BZYStrokeTimer` is highly customizable and comes with a large set of delegate methods for you to use.
+There are four main methods:
+
+    - (void)start;
+    - (void)pause;
+    - (void)resume;
+    - (void)start;
+
 ## Requirements
 
 ## Installation
