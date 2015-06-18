@@ -154,7 +154,7 @@
     [path addLineToPoint:CGPointMake(CGRectGetMaxX(self.bounds)-dx, CGRectGetMaxY(self.bounds)-dy)];
     [path addLineToPoint:CGPointMake(dx, CGRectGetMaxY(self.bounds)-dy)];
     [path addLineToPoint:CGPointMake(dx, dy)];
-    [path addLineToPoint:CGPointMake(CGRectGetMidX(self.bounds)+dx, dy)];
+    [path addLineToPoint:CGPointMake(CGRectGetMidX(self.bounds), dy)];
     return path;
 }
 
