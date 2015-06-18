@@ -14,12 +14,31 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 `BZYStrokeTimer` is highly customizable and comes with a large set of delegate methods for you to use.
-There are four main methods:
+There are four main methods, all of which are self explanitory:
 
     - (void)start;
     - (void)pause;
     - (void)resume;
     - (void)start;
+
+`BZYStrokeTimer` supports the `IB_DESIGNABLE` protocol so you can fiddle with it right in a storyboard or nib without having to keep building your project!
+
+The following properties support `IBInspectable`:
+
+    @property (nonatomic) IBInspectable CGFloat progress;
+    @property (nonatomic) IBInspectable UIColor *timerColor; //Defaults to [UIColor blackColor]
+    @property (nonatomic) IBInspectable CGFloat lineWidth;   //Defaults to 10.0
+
+Other options include:
+
+    @property (nonatomic) NSString *timingFunction; //defaults to kCAMediaTimingFunctionEaseInEaseOut
+    @property (nonatomic) NSTimeInterval duration;  //defaults at 5.0
+
+There are two ways to use `BZYStrokeTimer`, with or without animations.
+
+###Animating
+
+Set all your desired properties, either 
 
 ## Requirements
 
