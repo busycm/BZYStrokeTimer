@@ -9,6 +9,12 @@
 
 `BZYStrokeTimer` is an awesome and beautifully simple timer built off `CAShapeLayer`.
 
+![demo](https://github.com/busycm/BZYStrokeVew/demo.gif)
+
+You can also pause and resume the timer as you see fit.
+
+![demo](https://github.com/busycm/BZYStrokeView/pause_demo.gif)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
