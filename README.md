@@ -92,9 +92,8 @@ pod "BZYStrokeTimer"
 ```
 
 ## Authors
-
+[startupthekid](https://github.com/startupthekid) (mailto: conronb@gmail.com) && [ruddfawcett](https://github.com/ruddfawcett) (mailto: rudd@ruddfawcett.com)
 startupthekid, conronb@gmail.com
-
 ruddfawcett, rudd@ruddfawcett.com
 
 ## License
