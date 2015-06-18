@@ -38,7 +38,45 @@ There are two ways to use `BZYStrokeTimer`, with or without animations.
 
 ###Animating
 
-Set all your desired properties, either 
+Set all your desired properties, either through storyboard or programatically like so:
+
+    self.strokeTimer.duration = 10.0;
+    self.strokeTimer.timerColor = [UIColor blueColor];
+    self.strokeTimer.lineWidth = 5.0;
+
+Then call `start`.
+
+Example with `UILongPressGestureRecognizer`
+
+	- (void)handleLongPress:(UILongPressGestureRecognizer *)gesture {
+	    if(gesture.state == UIGestureRecognizerStateBegan) {
+	        if(self.strokeTimer.isPaused) [self.strokeTimer resume];
+	        if(!self.strokeTimer.isRunning) [self.strokeTimer start];
+	    } else if((gesture.state == UIGestureRecognizerStateEnded || gesture.state == UIGestureRecognizerStateFailed || gesture.state == UIGestureRecognizerStateCancelled) && self.strokeTimer.isRunning) {
+	        [self.strokeTimer pause];
+	    }
+	}
+
+###Manually
+
+If you want to use the timer to represent the progress of a task, say a network download, you can manually set the `progress` property, which ranges from 0.0 to 1.0 as the task continues.
+
+###Delegate
+
+`BZYStrokeTimerDelegate` includes the following optional functions:
+
+	- (void)strokeTimerWillStart:(BZYStrokeTimer *)strokeTimer;
+	- (void)strokeTimerDidStart:(BZYStrokeTimer *)strokeTimer;
+	- (void)strokeTimerWillPause:(BZYStrokeTimer *)strokeTimer;
+	- (void)strokeTimerDidPause:(BZYStrokeTimer *)strokeTimer;
+	- (void)strokeTimerWillResume:(BZYStrokeTimer *)strokeTimer;
+	- (void)strokeTimerDidResume:(BZYStrokeTimer *)strokeTimer;
+	- (void)strokeTimerWillStop:(BZYStrokeTimer *)strokeTimer;
+	- (void)strokeTimerDidStop:(BZYStrokeTimer *)strokeTimer;
+
+	- (BOOL)strokeTimerShouldStart:(BZYStrokeTimer *)strokeTimer;
+	- (BOOL)strokeTimerShouldPause:(BZYStrokeTimer *)strokeTimer;
+	- (BOOL)strokeTimerShouldResume:(BZYStrokeTimer *)strokeTimer;
 
 ## Requirements
 
