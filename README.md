@@ -9,11 +9,11 @@
 
 `BZYStrokeTimer` is an awesome and beautifully simple timer built off `CAShapeLayer`.
 
-![demo](https://github.com/busycm/BZYStrokeTimer/blob/master/demo.gif =300x)
+![](https://github.com/busycm/BZYStrokeTimer/blob/master/demo.gif =300x)
 
 You can also pause and resume the timer as you see fit.
 
-![demo](https://github.com/busycm/BZYStrokeTimer/blob/master/pause_demo.gif =300x)
+![](https://github.com/busycm/BZYStrokeTimer/blob/master/pause_demo.gif =300x)
 
 
 ## Usage
