@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/BZYStrokeTimer.svg?style=flat)](http://cocoapods.org/pods/BZYStrokeTimer)
 [![Platform](https://img.shields.io/cocoapods/p/BZYStrokeTimer.svg?style=flat)](http://cocoapods.org/pods/BZYStrokeTimer)
 
+##Description
+
+`BZYStrokeTimer` is an awesome and beautifully simple timer built off `CAShapeLayer`.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -20,9 +24,10 @@ it, simply add the following line to your Podfile:
 pod "BZYStrokeTimer"
 ```
 
-## Author
+## Authors
 
 startupthekid, conronb@gmail.com
+
 ruddfawcett, rudd@ruddfawcett.com
 
 ## License
