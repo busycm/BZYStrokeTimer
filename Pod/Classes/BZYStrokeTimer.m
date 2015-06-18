@@ -73,9 +73,9 @@
     self.shapeLayer.strokeEnd = 1;
     //generate the animation
     CABasicAnimation *wind = [self generateAnimationWithDuration:self.duration == 0 ? kDefaultDuration : self.duration FromValue:@(self.shapeLayer.strokeStart) toValue:@(self.shapeLayer.strokeEnd) withKeypath:@"strokeEnd" withFillMode:kCAFillModeForwards];
-    wind.timingFunction= [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    wind.timingFunction= [CAMediaTimingFunction functionWithName:self.timingFunction];
     wind.removedOnCompletion=NO;
-    
+    //add the animation 
     [self.shapeLayer addAnimation:wind forKey:@"strokeEndAnimation"];
     if([_delegate respondsToSelector:@selector(strokeTimerDidStart:)]) [_delegate strokeTimerDidStart:self];
 }
@@ -204,6 +204,10 @@
     }
 }
 
+- (NSString *)timingFunction {
+    return !_timingFunction ? _timingFunction = kCAMediaTimingFunctionEaseInEaseOut : _timingFunction;
+}
+
 #pragma mark Property Setters
 
 - (void)setProgress:(CGFloat)progress {
@@ -224,10 +228,10 @@
     }
 }
 
-- (void)setTimerWidth:(CGFloat)timerWidth {
-    if(_timerWidth != timerWidth) {
-        _timerWidth = timerWidth;
-        self.shapeLayer.lineWidth = timerWidth;
+- (void)setLineWidth:(CGFloat)lineWidth {
+    if(_lineWidth != lineWidth) {
+        _lineWidth = lineWidth;
+        self.shapeLayer.lineWidth = lineWidth;
     }
 }
 
