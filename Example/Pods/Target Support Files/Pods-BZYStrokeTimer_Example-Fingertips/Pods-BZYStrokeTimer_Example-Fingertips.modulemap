@@ -1,0 +1,6 @@
+framework module Fingertips {
+  umbrella header "Pods-BZYStrokeTimer_Example-Fingertips-umbrella.h"
+
+  export *
+  module * { export * }
+}

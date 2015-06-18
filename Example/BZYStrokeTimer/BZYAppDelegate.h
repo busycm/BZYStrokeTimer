@@ -8,8 +8,8 @@
 
 @import UIKit;
 
+#import "MBFingerTipWindow.h"
+
 @interface BZYAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) MBFingerTipWindow *window;
 @end

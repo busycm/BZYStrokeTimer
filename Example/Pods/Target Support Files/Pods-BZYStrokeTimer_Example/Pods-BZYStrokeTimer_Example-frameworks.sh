@@ -49,7 +49,9 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'BZYStrokeTimer.framework'
+  install_framework 'Fingertips.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'BZYStrokeTimer.framework'
+  install_framework 'Fingertips.framework'
 fi

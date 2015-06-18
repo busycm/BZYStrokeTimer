@@ -12,3 +12,9 @@
 #define COCOAPODS_VERSION_MINOR_BZYStrokeTimer 0
 #define COCOAPODS_VERSION_PATCH_BZYStrokeTimer 0
 
+// Fingertips
+#define COCOAPODS_POD_AVAILABLE_Fingertips
+#define COCOAPODS_VERSION_MAJOR_Fingertips 0
+#define COCOAPODS_VERSION_MINOR_Fingertips 4
+#define COCOAPODS_VERSION_PATCH_Fingertips 0
+

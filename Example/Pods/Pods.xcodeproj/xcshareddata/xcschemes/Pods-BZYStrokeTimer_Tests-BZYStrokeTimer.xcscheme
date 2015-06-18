@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "885F17B106A5BE7A39BD9809"
+               BlueprintIdentifier = "65691135DD16DDF0DB92CFFD"
                BuildableName = "BZYStrokeTimer.framework"
                BlueprintName = "Pods-BZYStrokeTimer_Tests-BZYStrokeTimer"
                ReferencedContainer = "container:Pods.xcodeproj">

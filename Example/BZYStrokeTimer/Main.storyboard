@@ -17,9 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="M4Z-NK-Bli">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7X-N7-aKr" customClass="BZYStrokeTimer">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="progress">
                                         <real key="value" value="0.0"/>
@@ -27,8 +30,8 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="timerColor">
                                         <color key="value" red="0.14117647059999999" green="0.41176470590000003" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="timerWidth">
-                                        <real key="value" value="8"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -37,8 +40,12 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="O7X-N7-aKr" secondAttribute="bottom" id="0Q9-0K-AMe"/>
+                            <constraint firstItem="M4Z-NK-Bli" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="-20" id="7bR-Um-WxL"/>
                             <constraint firstAttribute="trailing" secondItem="O7X-N7-aKr" secondAttribute="trailing" id="C9U-aq-ufO"/>
+                            <constraint firstAttribute="trailing" secondItem="M4Z-NK-Bli" secondAttribute="trailing" id="Nhd-Bk-IQ8"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="M4Z-NK-Bli" secondAttribute="bottom" id="WZe-MH-Alc"/>
                             <constraint firstItem="O7X-N7-aKr" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="awj-NO-pnI"/>
+                            <constraint firstItem="M4Z-NK-Bli" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="t74-x8-p1T"/>
                             <constraint firstItem="O7X-N7-aKr" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="top" id="yrF-DZ-84j"/>
                         </constraints>
                         <connections>
@@ -56,4 +63,7 @@
             <point key="canvasLocation" x="305" y="433"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="demo2.jpg" width="900" height="900"/>
+    </resources>
 </document>
