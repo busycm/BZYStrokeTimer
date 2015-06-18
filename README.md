@@ -1,6 +1,6 @@
 # BZYStrokeTimer
 
-[![CI Status](http://img.shields.io/travis/startupthekid/BZYStrokeTimer.svg?style=flat)](https://travis-ci.org/startupthekid/BZYStrokeTimer)
+[![CI Status](http://img.shields.io/travis/startupthekid/BZYStrokeTimer.svg?style=flat)](https://travis-ci.org/busycm/BZYStrokeTimer)
 [![Version](https://img.shields.io/cocoapods/v/BZYStrokeTimer.svg?style=flat)](http://cocoapods.org/pods/BZYStrokeTimer)
 [![License](https://img.shields.io/cocoapods/l/BZYStrokeTimer.svg?style=flat)](http://cocoapods.org/pods/BZYStrokeTimer)
 [![Platform](https://img.shields.io/cocoapods/p/BZYStrokeTimer.svg?style=flat)](http://cocoapods.org/pods/BZYStrokeTimer)
