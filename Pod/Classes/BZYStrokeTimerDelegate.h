@@ -93,4 +93,5 @@
  *  @return Whether or not the timer should resume.
  */
 - (BOOL)strokeTimerShouldResume:(BZYStrokeTimer *)strokeTimer;
+
 @end
