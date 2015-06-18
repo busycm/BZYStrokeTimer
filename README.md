@@ -23,6 +23,7 @@ pod "BZYStrokeTimer"
 ## Author
 
 startupthekid, conronb@gmail.com
+ruddfawcett, rudd@ruddfawcett.com
 
 ## License
 
