@@ -188,13 +188,12 @@
 
 - (UIBezierPath *)generatePathWithXInset:(CGFloat)dx withYInset:(CGFloat)dy {
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(CGRectGetMidX(self.bounds), dy)];
+    [path moveToPoint:CGPointMake(CGRectGetMidX(self.bounds)+dx, dy)];
     [path addLineToPoint:CGPointMake(CGRectGetMaxX(self.bounds)-dx, dy)];
     [path addLineToPoint:CGPointMake(CGRectGetMaxX(self.bounds)-dx, CGRectGetMaxY(self.bounds)-dy)];
     [path addLineToPoint:CGPointMake(dx, CGRectGetMaxY(self.bounds)-dy)];
     [path addLineToPoint:CGPointMake(dx, dy)];
-    [path addLineToPoint:CGPointMake(CGRectGetMidX(self.bounds), dy)];
-    
+    [path addLineToPoint:CGPointMake(CGRectGetMidX(self.bounds)-dx, dy)];
     return path;
 }
 
