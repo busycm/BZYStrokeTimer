@@ -63,10 +63,14 @@
         _elapsedTime += 0.01;
     }
     
-    if (_elapsedTime >= _duration) {
+    if (self.animationCompletion == 1 || _elapsedTime >= _duration) {
         [self.animationTimer invalidate];
         self.animationTimer = nil;
         [self stop];
+    }
+    
+    if (!self.paused && [_delegate respondsToSelector:@selector(strokeTimer:didAdvanceWithProgress:)]) {
+        [_delegate strokeTimer:self didAdvanceWithProgress:self.animationCompletion];
     }
 }
 
@@ -74,7 +78,7 @@
 
 - (void)start {
     if ([_delegate respondsToSelector:@selector(strokeTimerShouldStart:)]) {
-        if(![_delegate strokeTimerShouldStart:self]) {
+        if (![_delegate strokeTimerShouldStart:self]) {
             return;
         }
     }
@@ -101,8 +105,8 @@
 }
 
 - (void)pause {
-    if([_delegate respondsToSelector:@selector(strokeTimerShouldPause:)]) {
-        if(![_delegate strokeTimerShouldPause:self]) {
+    if ([_delegate respondsToSelector:@selector(strokeTimerShouldPause:)]) {
+        if (![_delegate strokeTimerShouldPause:self]) {
            return;
         }
     }
@@ -170,10 +174,6 @@
     return self.shapeLayer.bounds.size;
 }
 
-//- (void)prepareForInterfaceBuilder {
-//    self.progress = 0.5;
-//}
-
 #pragma mark - Helpers
 
 - (CABasicAnimation *)generateAnimationWithDuration:(NSTimeInterval)duration FromValue:(NSNumber *)fromValue toValue:(NSNumber *)toValue withKeypath:(NSString *)keyPath withFillMode:(NSString *)fillMode {
@@ -194,6 +194,7 @@
     [path addLineToPoint:CGPointMake(dx, CGRectGetMaxY(self.bounds)-dy)];
     [path addLineToPoint:CGPointMake(dx, dy)];
     [path addLineToPoint:CGPointMake(CGRectGetMidX(self.bounds)-dx, dy)];
+    
     return path;
 }
 
@@ -236,11 +237,17 @@
 - (CGFloat)animationCompletion {
     CGFloat percentage = _elapsedTime / _duration;
     
-    if (percentage >= 1) {
+    
+    
+    if (percentage == 1 || percentage >= 1) {
+        [self.animationTimer invalidate];
+        self.animationTimer = nil;
+        [self stop];
         return 1.0f;
-    } else if(percentage <= 0) {
+    } else if (percentage <= 0) {
         return 0.0f;
-    } else {
+    }
+    else {
         return percentage;
     }
 }
@@ -254,7 +261,7 @@
 - (void)setProgress:(CGFloat)progress {
     if (progress >= 1) {
         self.shapeLayer.strokeEnd = 1.0f;
-    } else if(progress <= 0) {
+    } else if (progress <= 0) {
         self.shapeLayer.strokeEnd = 0.0f;
     } else {
         self.shapeLayer.strokeEnd = progress;

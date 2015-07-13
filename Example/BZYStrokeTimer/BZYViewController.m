@@ -6,11 +6,12 @@
 //  Copyright (c) 2014 startupthekid. All rights reserved.
 //
 
+#import <BZYStrokeTimer/BZYStrokeTimer.h>
 #import "BZYViewController.h"
 
 #import "BZYStrokeTimer.h"
 
-@interface BZYViewController ()
+@interface BZYViewController () <BZYStrokeTimerDelegate>
 
 @property (weak, nonatomic) IBOutlet BZYStrokeTimer *strokeTimer;
 @property (strong, nonatomic) IBOutlet UILongPressGestureRecognizer *longPressGesture;
@@ -33,6 +34,7 @@
 
 - (void)setup {
     self.strokeTimer.duration = 5;
+    self.strokeTimer.delegate = self;
     [self.longPressGesture addTarget:self action:@selector(handleLongPress:)];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
@@ -53,6 +55,10 @@
                 gesture.state == UIGestureRecognizerStateCancelled) && self.strokeTimer.isRunning) {
         [self.strokeTimer pause];
     }
+}
+
+- (void)strokeTimer:(BZYStrokeTimer *)strokeTimer didAdvanceWithProgress:(CGFloat)progress {
+    NSLog(@"%f",progress);
 }
 
 @end
