@@ -33,6 +33,9 @@
 
 - (void)setup {
     self.strokeTimer.duration = 5;
+    self.strokeTimer.lineWidth = 5;
+    self.strokeTimer.clockwise = NO;
+    self.strokeTimer.unwinds = YES;
     [self.longPressGesture addTarget:self action:@selector(handleLongPress:)];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }

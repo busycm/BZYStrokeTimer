@@ -53,6 +53,8 @@
 }
 
 - (void)commonInit {
+    self.clockwise = YES;
+    self.unwinds = NO;
     [self.layer addSublayer:self.shapeLayer];
 }
 
@@ -62,7 +64,6 @@
     if (!self.paused) {
         _elapsedTime += 0.01;
     }
-    
     if (_elapsedTime >= _duration) {
         [self.animationTimer invalidate];
         self.animationTimer = nil;
@@ -87,12 +88,12 @@
     _paused = NO;
     
     self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
-    self.shapeLayer.strokeEnd = 1;
-    
-    CABasicAnimation *wind = [self generateAnimationWithDuration:self.duration == 0 ? kDefaultDuration : self.duration FromValue:@(self.shapeLayer.strokeStart) toValue:@(self.shapeLayer.strokeEnd) withKeypath:@"strokeEnd" withFillMode:kCAFillModeForwards];
+    self.shapeLayer.strokeEnd = 1.0f;
+    NSString *keypath = self.unwinds ? @"strokeStart" : @"strokeEnd";
+    CABasicAnimation *wind = [self generateAnimationWithDuration:self.duration == 0 ? kDefaultDuration : self.duration fromValue:@(self.shapeLayer.strokeStart) toValue:@(self.shapeLayer.strokeEnd) withKeypath:keypath withFillMode:kCAFillModeBoth];
     wind.timingFunction = [CAMediaTimingFunction functionWithName:self.timingFunction];
     wind.removedOnCompletion = NO;
-    
+    self.shapeLayer.path = [self generatePathWithXInset:self.lineWidth withYInset:self.lineWidth clockWise:self.clockwise].CGPath;
     [self.shapeLayer addAnimation:wind forKey:@"strokeEndAnimation"];
     
     if ([_delegate respondsToSelector:@selector(strokeTimerDidStart:)]) {
@@ -159,7 +160,7 @@
     _paused = NO;
     _elapsedTime = 0.0;
     
-    [self.shapeLayer removeAnimationForKey:@"strokeEndAnimation"];
+//    [self.shapeLayer removeAnimationForKey:@"strokeEndAnimation"];
     
     if ([_delegate respondsToSelector:@selector(strokeTimerDidStop:)]) {
         [_delegate strokeTimerDidStop:self];
@@ -170,39 +171,34 @@
     return self.shapeLayer.bounds.size;
 }
 
-//- (void)prepareForInterfaceBuilder {
-//    self.progress = 0.5;
-//}
-
 #pragma mark - Helpers
 
-- (CABasicAnimation *)generateAnimationWithDuration:(NSTimeInterval)duration FromValue:(NSNumber *)fromValue toValue:(NSNumber *)toValue withKeypath:(NSString *)keyPath withFillMode:(NSString *)fillMode {
+- (CABasicAnimation *)generateAnimationWithDuration:(NSTimeInterval)duration fromValue:(NSNumber *)fromValue toValue:(NSNumber *)toValue withKeypath:(NSString *)keyPath withFillMode:(NSString *)fillMode {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:keyPath];
     animation.duration = duration;
     animation.fromValue = fromValue;
     animation.toValue = toValue;
     animation.fillMode = fillMode;
-    
     return animation;
 }
 
-- (UIBezierPath *)generatePathWithXInset:(CGFloat)dx withYInset:(CGFloat)dy {
+- (UIBezierPath *)generatePathWithXInset:(CGFloat)dx withYInset:(CGFloat)dy clockWise:(BOOL)clockwise{
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(CGRectGetMidX(self.bounds)+dx, dy)];
-    [path addLineToPoint:CGPointMake(CGRectGetMaxX(self.bounds)-dx, dy)];
-    [path addLineToPoint:CGPointMake(CGRectGetMaxX(self.bounds)-dx, CGRectGetMaxY(self.bounds)-dy)];
-    [path addLineToPoint:CGPointMake(dx, CGRectGetMaxY(self.bounds)-dy)];
-    [path addLineToPoint:CGPointMake(dx, dy)];
-    [path addLineToPoint:CGPointMake(CGRectGetMidX(self.bounds)-dx, dy)];
-    return path;
+    [path moveToPoint:CGPointMake(CGRectGetMidX(self.bounds), dy/2)];
+    [path addLineToPoint:CGPointMake(CGRectGetMaxX(self.bounds)-dx/2, dy/2)];
+    [path addLineToPoint:CGPointMake(CGRectGetMaxX(self.bounds)-dx/2, CGRectGetMaxY(self.bounds)-dy/2)];
+    [path addLineToPoint:CGPointMake(dx/2, CGRectGetMaxY(self.bounds)-dy/2)];
+    [path addLineToPoint:CGPointMake(dx/2, dy/2)];
+    [path addLineToPoint:CGPointMake(CGRectGetMidX(self.bounds), dy/2)];
+    [path closePath];
+    return clockwise ? path : [path bezierPathByReversingPath];
 }
 
 #pragma mark - UIView
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
-    self.shapeLayer.path = [self generatePathWithXInset:self.shapeLayer.lineWidth/2 withYInset:self.shapeLayer.lineWidth/2].CGPath;
+    self.shapeLayer.path = [self generatePathWithXInset:self.shapeLayer.lineWidth withYInset:self.shapeLayer.lineWidth clockWise:self.clockwise].CGPath;
 }
 
 #pragma mark - Properties
@@ -215,10 +211,10 @@
         layer.lineWidth = kDefaultLineWidth;
         layer.fillColor = UIColor.clearColor.CGColor;
         layer.strokeColor = [UIColor blackColor].CGColor;
-        layer.lineCap = kCALineCapSquare;
+        layer.lineCap = kCALineCapButt;
         layer.frame = self.bounds;
         layer.strokeStart = 0;
-        layer.strokeEnd = 0;
+        layer.strokeEnd = 1;
         layer;
     }) : _shapeLayer;
 }
@@ -261,7 +257,6 @@
     }
 }
 
-
 - (void)setTimerColor:(UIColor *)timerColor {
     if (![_timerColor isEqual:timerColor]) {
         _timerColor = timerColor;
@@ -274,6 +269,12 @@
         _lineWidth = lineWidth;
         self.shapeLayer.lineWidth = lineWidth;
     }
+}
+
+- (void)setUnwinds:(BOOL)unwinds {
+    if(_unwinds == unwinds) return;
+    _unwinds = unwinds;
+    self.shapeLayer.strokeEnd = unwinds ? 1 : 0;
 }
 
 @end

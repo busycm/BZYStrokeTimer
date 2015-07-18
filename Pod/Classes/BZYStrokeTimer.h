@@ -62,6 +62,16 @@ IB_DESIGNABLE
  */
 @property (nonatomic, getter=isPaused, readonly)  BOOL paused;
 
+/**
+ *  Does the timer run in the clockwise direction.
+ */
+@property (nonatomic, getter=isClockwise) BOOL clockwise;
+
+/**
+ * Does the timer start out at full length and unwind.
+ */
+@property (nonatomic, getter=doesUnwind) BOOL unwinds;
+
 #pragma mark - BZYStrokeTimerDelegate
 
 /**

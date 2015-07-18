@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AF920C2FAA65F56657600288A68532FF0C454507",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AF920C2FAA65F56657600288A68532FF0C454507" : 0,
+    "8FDE98F502D34CE57B6404A2CA221ABBDE0BD65E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F029B9EE-E570-42B0-A791-47793B2BF4E9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AF920C2FAA65F56657600288A68532FF0C454507" : "BZYStrokeTimer",
+    "8FDE98F502D34CE57B6404A2CA221ABBDE0BD65E" : "busyios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BZYStrokeTimer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/BZYStrokeTimer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/busycm\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8FDE98F502D34CE57B6404A2CA221ABBDE0BD65E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/busycm\/BZYStrokeTimer",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF920C2FAA65F56657600288A68532FF0C454507"
+    }
+  ]
+}
