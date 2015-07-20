@@ -64,10 +64,15 @@
     if (!self.paused) {
         _elapsedTime += 0.01;
     }
-    if (_elapsedTime >= _duration) {
+    
+    if (self.animationCompletion == 1 || _elapsedTime >= _duration) {
         [self.animationTimer invalidate];
         self.animationTimer = nil;
         [self stop];
+        
+        if (!self.paused && [_delegate respondsToSelector:@selector(strokeTimer:didAdvanceWithProgress:)]) {
+            [_delegate strokeTimer:self didAdvanceWithProgress:self.animationCompletion];
+        }
     }
 }
 
@@ -102,8 +107,8 @@
 }
 
 - (void)pause {
-    if([_delegate respondsToSelector:@selector(strokeTimerShouldPause:)]) {
-        if(![_delegate strokeTimerShouldPause:self]) {
+    if ([_delegate respondsToSelector:@selector(strokeTimerShouldPause:)]) {
+        if (![_delegate strokeTimerShouldPause:self]) {
            return;
         }
     }
@@ -232,11 +237,15 @@
 - (CGFloat)animationCompletion {
     CGFloat percentage = _elapsedTime / _duration;
     
-    if (percentage >= 1) {
+    if (percentage == 1 || percentage >= 1) {
+        [self.animationTimer invalidate];
+        self.animationTimer = nil;
+        [self stop];
         return 1.0f;
-    } else if(percentage <= 0) {
+    } else if (percentage <= 0) {
         return 0.0f;
-    } else {
+    }
+    else {
         return percentage;
     }
 }

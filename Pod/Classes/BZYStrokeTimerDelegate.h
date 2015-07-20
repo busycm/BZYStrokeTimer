@@ -67,6 +67,14 @@
  */
 - (void)strokeTimerDidStop:(BZYStrokeTimer *)strokeTimer;
 
+/**
+ *  Called as the timer advances.
+ *
+ *  @param strokeTimer The timer.
+ *  @param progress    The progress of the timer.
+ */
+- (void)strokeTimer:(BZYStrokeTimer *)strokeTimer didAdvanceWithProgress:(CGFloat)progress;
+
 #pragma mark - Boolean Delegate Methods
 
 /**
