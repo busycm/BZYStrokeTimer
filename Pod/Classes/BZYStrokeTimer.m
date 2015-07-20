@@ -69,10 +69,10 @@
         [self.animationTimer invalidate];
         self.animationTimer = nil;
         [self stop];
-        
-        if (!self.paused && [_delegate respondsToSelector:@selector(strokeTimer:didAdvanceWithProgress:)]) {
-            [_delegate strokeTimer:self didAdvanceWithProgress:self.animationCompletion];
-        }
+    }
+    
+    if (!self.paused && [_delegate respondsToSelector:@selector(strokeTimer:didAdvanceWithProgress:)]) {
+        [_delegate strokeTimer:self didAdvanceWithProgress:self.animationCompletion];
     }
 }
 
