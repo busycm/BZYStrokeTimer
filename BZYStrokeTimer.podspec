@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "BZYStrokeTimer"
-    s.version          = "1.0.2"
+    s.version          = "1.0.3"
     s.summary          = "BZYStrokeTimer is an awesome and beautifully simple timer built off CAShapeLayer."
     s.description      = <<-DESC
                             BZYStrokeTimer is an awesome and beautifully simple timer built off CAShapeLayer.
