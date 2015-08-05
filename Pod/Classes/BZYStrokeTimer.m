@@ -86,6 +86,7 @@
     
     _running = YES;
     _paused = NO;
+    _elapsedTime = 0.0;
     
     self.animationTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
     self.shapeLayer.strokeEnd = 1.0f;
@@ -158,7 +159,6 @@
     
     _running = NO;
     _paused = NO;
-    _elapsedTime = 0.0;
     
     if ([_delegate respondsToSelector:@selector(strokeTimerDidStop:)]) {
         [_delegate strokeTimerDidStop:self];

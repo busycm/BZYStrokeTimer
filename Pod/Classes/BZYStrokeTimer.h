@@ -62,6 +62,16 @@ IB_DESIGNABLE
  */
 @property (nonatomic, getter=isPaused, readonly)  BOOL paused;
 
+/**
+ *  Does the timer run in the clockwise direction.
+ */
+@property (nonatomic, getter=isClockwise) BOOL clockwise;
+
+/**
+ * Does the timer start out at full length and unwind.
+ */
+@property (nonatomic, getter=doesUnwind) BOOL unwinds;
+
 #pragma mark - BZYStrokeTimerDelegate
 
 /**
@@ -87,10 +97,10 @@ IB_DESIGNABLE
 - (void)resume;
 
 /**
- *  Stops the timer animation. 
+ *  Stops the timer animation.
  *
  * @note This method will be call automatically once elapsedTime = duration.
- * @warning If you pause the timer, this method must be called to clear the 
+ * @warning If you pause the timer, this method must be called to clear the
  * previous animation.
  */
 - (void)stop;
