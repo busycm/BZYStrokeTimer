@@ -77,6 +77,7 @@
 #pragma mark - Animation
 
 - (void)start {
+    _elapsedTime = 0.0;
     if ([_delegate respondsToSelector:@selector(strokeTimerShouldStart:)]) {
         if (![_delegate strokeTimerShouldStart:self]) {
             return;
@@ -161,7 +162,6 @@
     
     _running = NO;
     _paused = NO;
-    _elapsedTime = 0.0;
     
     [self.shapeLayer removeAnimationForKey:@"strokeEndAnimation"];
     
